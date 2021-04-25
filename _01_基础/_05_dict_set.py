@@ -21,6 +21,7 @@ print(d.get('Thomas','这个真木有'))
 
 
 #todo set   就是map的key的集合，不重复，无序
+# todo 1.创建一个set，需要提供一个list作为输入集合：
 s = set([1, 1, 2, 2, 3, 3])
 print(s)   #{1, 2, 3}
 

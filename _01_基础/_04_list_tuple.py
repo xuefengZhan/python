@@ -5,7 +5,6 @@ print(classmates[0])
 print(classmates[-1])
 
 
-
 classmates.append('Adam')
 print(classmates)
 classmates.insert(1, 'Jack')
