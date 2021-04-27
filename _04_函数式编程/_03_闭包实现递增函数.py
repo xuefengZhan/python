@@ -27,7 +27,6 @@ def createCounter():
 #todo 正确写法2:  由于外部变量不能在内部函数中做修改，指的是修改其值，这里用数组，这样不改地址，改变地址存的东西
 def createCounter():
     i = [0]
-
     def counter():
         i[0] += 1
         return i[0]
