@@ -2,9 +2,9 @@
 #todo 1.写文件   写文件和读文件是一样的，唯一区别是调用open()函数时,
 # 传入标识符'w'或者'wb'表示写文本文件或写二进制文件：
 
-# f = open('/Users/michael/test.txt', 'w')
-# f.wirte('Hello, world!')
-# f.close()
+f = open('/Users/michael/test.txt', 'w')
+f.wirte('Hello, world!')
+f.close()
 
 #todo 2.保险：
 # =你可以反复调用write()来写入文件，但是务必要调用f.close()来关闭文件。

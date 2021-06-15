@@ -15,6 +15,7 @@ def add_end(L=[]):
 
 print(add_end())  #['END']
 print(add_end())  #['END', 'END']
+
 #todo 理解： 函数名+参数相当于一个对象，默认参数相当于该对象的属性值；
 # 调用add_end()的时候相当于 该对象的L属性 追加了END,由于是可修改的，所以内容就保存进去了
 # 修改：
@@ -45,7 +46,7 @@ print(calc(nums[0], nums[1], nums[2]))
 print(calc(*nums))
 
 
-#todo 5.关键字参数       **函数名
+#todo 5.关键字参数       **参数名
 # 如果说可变参数是tuple的话，那么关键字参数就是dict
 # 关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict
 
@@ -70,8 +71,8 @@ print(person('Jack',17,**extra))
 def student(name,age,*,school,address):
     print('name', name, 'age',age,'school',school,'address',address)
 
-#todo 6.2使用  命名关键字参数必须传入参数名，这和位置参数不同。如果没有传入参数名，调用将报错；
-# 报错： print(student('jack', 18, school='一中', address='大事上', girl='无'))
+#todo 6.2  使用 命名关键字参数的时候必须传入参数名，这和位置参数不同。如果没有传入参数名，调用将报错；
+# 报错： print(student('jack', 18, school='一中', address='大事上', girl))
 print(student('jack', 18, school='一中', address='大事上'))
 
 

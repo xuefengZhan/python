@@ -14,7 +14,8 @@ print(bart) #<__main__.Student object at 0x0000020685207490>
 bart.name = 'Bart Simpson'
 print(bart.name)
 
-#todo 4.每个实例的必要属性需要在定义类的时候绑定
+#todo 4.固定地实例属性的绑定：
+# 每个实例的必要属性需要在定义类的时候绑定
 # 通过定义一个特殊的__init__方法，在创建实例的时候，就把name，score等属性绑上去：
 # 注意到__init__方法的第一个参数永远是self，表示创建的实例本身
 # 因此，在__init__方法内部，就可以把各种属性绑定到self，因为self就指向创建的实例本身。
